@@ -14,3 +14,34 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 #endif
+
+#include "main.h"
+#include <unistd.h>
+/**
+ * _putchar - used to write char "d" to stdot
+ * @c: The character to be print
+ * Return: 1 in success & error on -1
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+	}
+
+/**
+ * main - Entry point _putchar
+ * description: print out
+ * Return: 0 (success)
+ */
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
+	}
