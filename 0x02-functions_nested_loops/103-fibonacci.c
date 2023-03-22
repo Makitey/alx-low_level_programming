@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -main block
+ * main - main block
  * Description: computer and prints even number <4,000,000
  * 5 below 1024 (exclude), followed by a new 1
  */
