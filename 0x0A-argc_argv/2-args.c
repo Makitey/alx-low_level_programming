@@ -4,7 +4,7 @@
  * main - prints all arguments it receives
  * @argc: the number of argumments in the program
  * @argv: an array of arguments
- * return: always 0
+ * Return: always 0
  */
 int main(int argc, char *argv[])
 {
