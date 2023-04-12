@@ -32,7 +32,7 @@ int num1, num2;
 		}
 
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
+	mul = atol(argv[0]) *  atol(argv[1]);
 	printf("%lu\n", mul);
 return (0);
 }
