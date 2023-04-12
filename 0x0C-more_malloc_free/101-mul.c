@@ -1,9 +1,10 @@
 #include "main.h"
+#include<stdio.h>
 
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
- * @argv: An array of pointers to the arguments.
+ * @argv: An array of pointers.
  * Return: int
  */
 
