@@ -11,15 +11,16 @@
 int main(int argc, char *argv[])
 {
 unsigned long mul;
-int x, y;
+int num1, num2;
+
 	if (argc != 3)
 	{ printf("Error\n");
 	exit(98); }
-	for (x = 1; x < argc; x++)
+	for (num1 = 1; num1 < argc; num1++)
 	{
-		for (y = 0; argv[x][y] != '\0'; y++)
+		for (num2 = 0; argv[num1][num2] != '\0'; num2++)
 		{
-			if (argv[x][y] > 57 || argv[x][y] < 48)
+			if (argv[num1][num2] > 57 || argv[num1][num2] < 48)
 			{  printf("Error\n");
 			exit(98); }
 		}
