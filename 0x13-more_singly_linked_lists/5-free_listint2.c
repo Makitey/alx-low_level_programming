@@ -2,39 +2,20 @@
 #include <stdlib.h>
 
 /**
- * insert_nodeint_at_index - Insert a new node
- * @head: First node address
- * @idx: Position of the new node
- * @n: Data of the new node
- * Return: Address of the new node
+ * free_listint2 - Frees a list.
+ * @head: Address of the first node of a list.
  **/
 
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+void free_listint2(listint_t **head)
 {
-	listint_t *new_node, *tmp;
-	unsigned int x = 0;
+	listint_t *tmp;
 
-	if (*head == NULL && idx != 0)
-		return (NULL);
-	if (idx != 0)
+	if (head == NULL)
+		return;
+	while (*head != NULL)
 	{
-	tmp = *head;
-	for (; x < idx - 1 && tmp != NULL; x++)
-		tmp = tmp->next;
-	if (tmp == NULL)
-		return (NULL);
+		tmp = (*head)->next;
+		free(*head);
+		*head = tmp;
 	}
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
-		return (NULL);
-	new_node->n = n;
-	if (idx == 0)
-	{
-		new_node->next = *head;
-		*head = new_node;
-		return (new_node);
-	}
-	new_node->next = tmp->next;
-	tmp->next = new_node;
-	return (new_node);
 }
