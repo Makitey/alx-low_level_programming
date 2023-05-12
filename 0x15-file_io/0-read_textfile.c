@@ -9,9 +9,9 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_def;
-	int i, y;
+	int file_def, i, y;
 	char *buf;
+
 	if (!filename)
 		return (0);
 	file_def = open(filename, O_RDONLY);
