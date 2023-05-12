@@ -255,7 +255,7 @@ void close_elf(int elf)
  * Return: 0 on success.
  * Description: If the file is not an ELF File or exit code 98.
  */
- 
+
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
