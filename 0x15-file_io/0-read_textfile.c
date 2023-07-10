@@ -6,12 +6,12 @@
  * @letters: number of letters that is to read and get print.
  * Return: the number of letters printed, or 0 if it failed
  */
- 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_def;
 	int i, y;
 	char *buf;
+
 	if (!filename)
 		return (0);
 	file_def = open(filename, O_RDONLY);
